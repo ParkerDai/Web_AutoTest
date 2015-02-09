@@ -1,0 +1,21 @@
+SE5404D 10.0.50.105 admin
+//Stop when fail
+Web
+Console-DUT show
+Console-EUT
+RTC
+//Telnet
+//sleep 30 s
+Run serial_tcpserver_rs232.py advanced_settings.py
+COMtoCOM 0-4 10.0.50.105 rs232 115200 10 s
+Run serial_tcpserver_rs422.py
+COMtoCOM 0-4 10.0.50.105 rs422 115200 10 s
+Run serial_tcpserver_rs485_4wire.py
+COMtoCOM 0-4 10.0.50.105 rs422 115200 10 s
+Run serial_tcpserver_rs485_2wire.py
+COMtoCOM 0-4 10.0.50.105 rs485 115200 10 s
+Run network.py overview.py
+Invite
+Run alert_email_setting.py
+//Email hibox.hinet.net parkerdai@atop.com.tw 101026 test@hinet.net alert_email_sendtestmail.py
+Email hibox.hinet.net parkerdai@atop.com.tw 101026 test@hinet.net

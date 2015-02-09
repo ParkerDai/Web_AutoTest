@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://10.0.50.105/" />
+<title>email_sendTestMail</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">email_sendTestMail</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/email.asp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>left</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=E-mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=rbottom</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=sender_name</td>
+	<td>test@hinet.net</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=add1_name</td>
+	<td>parkerdai@atop.com.tw</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=add2_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=add3_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=add4_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=add5_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mail_serv</td>
+	<td>www.hibox.hinet.net</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>name=mail_auth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mail_user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mail_pass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=send</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Test sending mail successed.</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

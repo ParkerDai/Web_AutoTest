@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://10.0.50.105/" />
+<title>advanced_settings</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">advanced_settings</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/advance_set.asp?port=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='cktcp_timeout']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=tcp_time_out</td>
+	<td>3600</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='cktcp_keep_alive']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=tcp_keep_alive</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='ckuart_time_delimiter']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='autoset']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>xpath=(//input[@name='autoset'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txt_uart_time</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='discard_bytes']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=discard_type</td>
+	<td>label=&lt;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=discard_length</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='ckuart_maxbt_delimiter']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txt_uart_maxbt</td>
+	<td>1452</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='ckuart_char_delimiter']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txt_uart_char</td>
+	<td>0x0d0a</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='cknet_time_delimiter']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txt_net_time</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='cknet_maxbt_delimiter']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txt_net_maxbt</td>
+	<td>1452</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='cknet_char_delimiter']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txt_net_char</td>
+	<td>0x0d0a</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='send_interval_check']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=send_interval</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='ckTranscation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=tran_interval</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='disabl_fifo']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='empty_com']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=advance_app</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,14 @@
+出現應用程序未處理的異常：2015/1/26 下午 05:53:14
+Application UnhandledException:視窗控制代碼建立後才能呼叫控制項上的 Invoke 或 BeginInvoke。;
+堆棧信息:   於 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   於 System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   於 System.Windows.Forms.Control.Invoke(Delegate method)
+   於 WindowsFormsApplication1.Form1.serialPort2_DataReceived(Object sender, SerialDataReceivedEventArgs e) 於 C:\Documents and Settings\Administrator\桌面\Web_AutoTest\Web_AutoTest\Web_AutoTest\Form1.cs: 行 1000
+   於 System.IO.Ports.SerialDataReceivedEventHandler.Invoke(Object sender, SerialDataReceivedEventArgs e)
+   於 System.IO.Ports.SerialPort.CatchReceivedEvents(Object src, SerialDataReceivedEventArgs e)
+   於 System.IO.Ports.SerialStream.EventLoopRunner.CallReceiveEvents(Object state)
+   於 System.Threading._ThreadPoolWaitCallback.WaitCallback_Context(Object state)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Threading._ThreadPoolWaitCallback.PerformWaitCallbackInternal(_ThreadPoolWaitCallback tpWaitCallBack)
+   於 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback(Object state)
+---------------------------------------------------------
